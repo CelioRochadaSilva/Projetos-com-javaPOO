@@ -69,14 +69,17 @@ public class Video implements AcoesVideos {
 
     @Override
     public void play() {
+        this.reproduzindo = true;
     }
 
     @Override
     public void pause() {
+        this.reproduzindo = false;
     }
 
     @Override
     public void like() {
+        this.curtidas ++;
     }
 
     @Override // vai sobre esvre : polimorfismo de sobre posição
