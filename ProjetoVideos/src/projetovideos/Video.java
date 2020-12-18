@@ -23,6 +23,7 @@ public class Video implements AcoesVideos {
         this.curtidas = 0;
         this.reproduzindo = false;
         
+        
     }
     
     
@@ -37,9 +38,11 @@ public class Video implements AcoesVideos {
     public int getAvaliacao() {
         return avaliacao;
     }
-
+  // media de\valiacao 
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        int nova;
+        nova = (this.avaliacao + avaliacao)/ this.views;
+        this.avaliacao = nova;
     }
 
     public int getViews() {

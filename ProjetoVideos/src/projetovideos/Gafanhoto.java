@@ -13,6 +13,7 @@ public class Gafanhoto extends Pessoa{
         super(nome, idade, sexo);
         this.Login = Login;
         this.TotAssistido = 0;
+        
     }
     
     
